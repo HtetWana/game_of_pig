@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Pig</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Game of Pig</h1>
+    <p>Two players. The player whose turn to roll the dice. The total is added to the
+        current player's cumulative total unless either die comes up as a "one ".
+    </p>
+    <p>If this happens, this player's turn is over
+        , the <strong>cumulative total zeroed out</strong> and the other player's turn .
+    </p>
+    <p>After each roll , the current
+        player can either roll again,(assuming a "one"
+        was not rolled) or if the current player feels that the luck is running thin, then can pass to the other
+        player and the cumulative total will be added to the score.
+    </p>
+    <p> The first player to get higher score than
+        <strong>Check Point</strong> wins.
+    </p>
+    <p>
+        Oh, and if you roll <strong>two "ones" (snake eyes) </strong> , your current <strong>score gets zeroed
+            out</strong> . So ,beware!.
+    </p>
+
+    <form action="#" id="playerForm">
+        <h2>Enter the players' name</h2>
+        <div>
+            <label for="player1"><strong> Player 1 :</strong></label>
+            <input type="text" id="player1" placeholder="Name" required>
+        </div>
+        <div>
+            <label for="player2"><strong> Player 2 :</strong></label>
+            <input type="text" id="player2" placeholder="Name" required>
+        </div>
+        <div>
+            <h4>Check Point</h4>
+            <input type="number" id="checkPoint" placeholder="number" required>
+        </div>
+
+        <button type="submit">Let's get started.</button>
+    </form>
+
+    <div id="gamecontrol">
+
+    </div>
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+</body>
+
+</html>
